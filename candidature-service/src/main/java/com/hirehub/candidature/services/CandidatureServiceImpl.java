@@ -60,7 +60,7 @@ public class CandidatureServiceImpl implements CandidatureService {
         }
 
         // Définir les valeurs par défaut
-        candidature.setStatus(CandidatureStatus.EN_COURS);
+        candidature.setStatus(CandidatureStatus.SOUMISE);
         candidature.setDateSoumission(LocalDateTime.now());
 
         // Sauvegarder en BDD
