@@ -214,7 +214,7 @@ public class CandidatureServiceImpl implements CandidatureService {
 
             rabbitTemplate.convertAndSend(
                     RabbitMQConstants.EXCHANGE,
-                    RabbitMQConstants.ROUTING_STATUT_CHANGED,
+                    RabbitMQConstants.ROUTING_CANDIDATURE_STATUT_CHANGED,
                     event
             );
             log.info("Événement 'candidature.statut.changed' publié pour la candidature: {}", candidature.getId());
